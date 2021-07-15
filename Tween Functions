@@ -1,0 +1,45 @@
+--// Written by G_Lyrics
+--// Simple TweenService functions
+
+function tweenP(var, endPosition, easingDir, easingSty, takingTime)
+	var:TweenPosition(
+		endPosition, -- End Position
+		easingDir, -- out/in/outin, Easing Direction
+		easingSty, -- Style
+		takingTime, -- Amount of time in total
+		false
+	)
+end
+
+function tweenS(var, endSize, easingDir, easingSty, takingTime)
+	var:TweenPosition(
+		endSize, -- End Size
+		easingDir, -- out/in/outin, Easing Direction
+		easingSty, -- Style
+		takingTime, -- Amount of time in total
+		false
+	)
+end
+
+function tweenSP(var, endSize, endPosition, easingDir, easingSty, takingTime)
+	var:TweenSizeAndPosition(
+		endSize, -- End Size
+		endPosition, -- End Position
+		easingDir, -- out/in/outin, Easing Direction
+		easingSty, -- Style
+		takingTime, -- Amount of time in total
+		false
+	)
+end
+
+-- Examples:
+
+local button = path.to.ui
+-- Example is Button, you could use anything else.
+
+tweenP(button, 0.037, 0,0.465, 0, "In", "Bounce", 0.5) -- Position
+
+tweenS(button, 0, 51,0, 57, "In", "Bounce", 0.5) -- Size
+
+tweenSP(button, 0, 51,0, 57, 0.037, 0,0.465, 0, "In", "Bounce", 0.5) -- Size and Position
+
