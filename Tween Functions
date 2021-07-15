@@ -34,12 +34,12 @@ end
 
 -- Examples:
 
-local button = path.to.ui
+local button = -- path.to.ui
 -- Example is Button, you could use anything else.
 
-tweenP(button, 0.037, 0,0.465, 0, "In", "Bounce", 0.5) -- Position
+	tweenP(button, UDim2.new(0.037, 0,0.465, 0), "In", "Bounce", 0.5) -- Position
 
-tweenS(button, 0, 51,0, 57, "In", "Bounce", 0.5) -- Size
+tweenS(button, UDim2.new(0, 51,0, 57), "In", "Bounce", 0.5) -- Size
 
-tweenSP(button, 0, 51,0, 57, 0.037, 0,0.465, 0, "In", "Bounce", 0.5) -- Size and Position
+tweenSP(button, UDim2.new(0, 51,0, 57), UDim2.new(0.037, 0,0.465, 0), "In", "Bounce", 0.5) -- Size and Position
 
