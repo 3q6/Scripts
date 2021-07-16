@@ -1,0 +1,16 @@
+--// Written by G_Lyrics
+--// Kick Script Example
+
+local Players = game.Players
+local Player = game.Players.LocalPlayer
+
+local Key = "N/A"
+local Incorrect_Message = "N/A"
+local Correct_Message = "N/A"
+
+
+if Key == Key then
+	print(Correct_Message)
+else
+	Player:Kick(Incorrect_Message)
+end
