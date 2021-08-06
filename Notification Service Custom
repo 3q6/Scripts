@@ -1,0 +1,48 @@
+function NewNotification(title, descr, image)
+	local Notifi = Instance.new("ScreenGui")
+	local Notification = Instance.new("Frame")
+	local Icon = Instance.new("ImageLabel")
+	local Title = Instance.new("TextLabel")
+	local Description = Instance.new("TextLabel")
+
+	Notifi.Name = "Notifi"
+	Notifi.Parent = game.StarterGui
+	Notifi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Notification.Name = "Notification"
+	Notification.Parent = Notifi
+	Notification.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Notification.Position = UDim2.new(0.0102929529, 0, 0.84171778, 0)
+	Notification.Size = UDim2.new(0, 339, 0, 116)
+
+	Icon.Name = "Icon"
+	Icon.Parent = Notification
+	Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Icon.Position = UDim2.new(0.0206489675, 0, 0.064043887, 0)
+	Icon.Size = UDim2.new(0, 100, 0, 100)
+	Icon.Image = image
+
+	Title.Name = "Title"
+	Title.Parent = Notification
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.Position = UDim2.new(0.348082602, 0, 0.0603448264, 0)
+	Title.Size = UDim2.new(0, 210, 0, 27)
+	Title.Font = Enum.Font.SourceSans
+	Title.Text = title
+	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Title.TextSize = 24.000
+	Title.TextWrapped = true
+
+	Description.Name = "Description"
+	Description.Parent = Notification
+	Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Description.Position = UDim2.new(0.348082602, 0, 0.344827592, 0)
+	Description.Size = UDim2.new(0, 210, 0, 67)
+	Description.Font = Enum.Font.SourceSans
+	Description.Text = descr
+	Description.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Description.TextSize = 25.000
+	Description.TextWrapped = true
+end
+
+--// NewNotification("Shirt", "Roblox", "rbxassetid://1522361030") -- Example
